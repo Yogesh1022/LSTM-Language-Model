@@ -223,7 +223,7 @@ metrics = evaluator.evaluate_on_dataset(test_loader, "Test")
 print(f"Test Perplexity: {metrics['perplexity']:.2f}")
 ```
 
-## 📝 Expected Results
+## 📝  Results
 
 - **Training Time**: ~15-30 minutes for all three models (CPU), ~50 minutes with GPU
 - **Best Model**: Large model with 1.79 test perplexity
@@ -232,6 +232,30 @@ print(f"Test Perplexity: {metrics['perplexity']:.2f}")
   - Medium: 2.04 (Good fit)
   - Large: 1.79 (Best fit)
 - **Generated Text**: Should maintain Jane Austen's writing style
+
+### Training Curves
+
+**Small Model - Underfitting:**
+
+![Small Model Training](results/small_training_curves.png)
+
+**Medium Model - Good Fit:**
+
+![Medium Model Training](results/medium_training_curves.png)
+
+**Large Model - Best Fit:**
+
+![Large Model Training](results/large_training_curves.png)
+
+### Model Comparison
+
+**Validation Loss Comparison:**
+
+![Model Comparison - Loss](results/model_comparison_loss.png)
+
+**Perplexity Comparison:**
+
+![Model Comparison - Perplexity](results/model_comparison_perplexity.png)
 
 ## 🛠️ Troubleshooting
 
