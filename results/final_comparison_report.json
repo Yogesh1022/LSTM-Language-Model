@@ -1,0 +1,53 @@
+{
+    "timestamp": "2025-11-13T16:35:55.901116",
+    "models": {
+        "small": {
+            "train": {
+                "final_loss": 1.5239712091124789
+            },
+            "val": {
+                "loss": 1.5239712091124789,
+                "perplexity": 4.590418338775635
+            },
+            "test": {
+                "loss": 1.5221783098877573,
+                "perplexity": 4.58219575881958,
+                "total_tokens": 437290
+            },
+            "best_epoch": 20,
+            "total_epochs": 20
+        },
+        "medium": {
+            "train": {
+                "final_loss": 0.7147493642203662
+            },
+            "val": {
+                "loss": 0.7147493642203662,
+                "perplexity": 2.0436742305755615
+            },
+            "test": {
+                "loss": 0.7111861831153014,
+                "perplexity": 2.036405324935913,
+                "total_tokens": 437290
+            },
+            "best_epoch": 20,
+            "total_epochs": 20
+        },
+        "large": {
+            "train": {
+                "final_loss": 1.362834578592249
+            },
+            "val": {
+                "loss": 0.5856890082359314,
+                "perplexity": 1.7962281703948975
+            },
+            "test": {
+                "loss": 0.583523551836116,
+                "perplexity": 1.7923427820205688,
+                "total_tokens": 437290
+            },
+            "best_epoch": 20,
+            "total_epochs": 20
+        }
+    }
+}

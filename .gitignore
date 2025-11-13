@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyTorch - EXCLUDE ALL MODELS (share via Google Drive instead)
+models/
+*.pt
+*.pth
+
+# Google Cloud SDK (not needed)
+.config/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+Untitled*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+results/logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.cache/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Plots (optional - uncomment if you don't want to track plots)
+# results/plots/*.png
+# results/*.png
+
+# Metrics (optional - uncomment if you don't want to track metrics)
+# results/metrics/*.json
+
+# Assignment PDF (optional - uncomment if you don't want to track it)
+# Assignment2.pdf
