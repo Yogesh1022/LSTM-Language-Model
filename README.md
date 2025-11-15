@@ -1,6 +1,6 @@
 # LSTM Language Model - Pride and Prejudice
 
-A complete implementation of LSTM-based language models with three different architectures (Small, Medium, Large) trained on Jane Austen's "Pride and Prejudice".
+A complete implementation of LSTM-based language models with three different architectures (Underfit, Overfit, Best Fit) trained on Jane Austen's "Pride and Prejudice".
 
 ## 📁 Project Structure
 
@@ -31,9 +31,9 @@ Assignment2/
 
 | Model | Size | Test Perplexity | Download Link |
 |-------|------|-----------------|---------------|
-| Small Model | ~68 MB | 4.58 | [Download small_model_best.pt](https://drive.google.com/drive/folders/1JNwQmHFHO0f_Z5guhp5MbNnaUII8-1Lr?usp=sharing) |
-| Medium Model | ~68 MB | 2.04 | [Download medium_model_best.pt](https://drive.google.com/drive/folders/1IZ5mmpynoMoIMVD8qN8NDfk70o3YTgxK?usp=sharing) |
-| Large Model | ~130 MB | 1.79 | [Download large_model_best.pt](https://drive.google.com/drive/folders/1CbgUJLIbKW3N_Kc7aaxhomh3jYCoVhcV?usp=sharing) |
+| Underfit Model | ~68 MB | 4.58 | [Download underfit_model_best.pt](https://drive.google.com/drive/folders/1JNwQmHFHO0f_Z5guhp5MbNnaUII8-1Lr?usp=sharing) |
+| Overfit Model | ~68 MB | 2.04 | [Download overfit_model_best.pt](https://drive.google.com/drive/folders/1IZ5mmpynoMoIMVD8qN8NDfk70o3YTgxK?usp=sharing) |
+| Best Fit Model | ~130 MB | 1.79 | [Download bestfit_model_best.pt](https://drive.google.com/drive/folders/1CbgUJLIbKW3N_Kc7aaxhomh3jYCoVhcV?usp=sharing) |
 
 **Instructions:**
 1. Click the download link for the model you want
@@ -86,23 +86,23 @@ This will:
 
 ## 📊 Model Architectures
 
-### Small Model
+### Underfit Model
 - Embedding dimension: 128
 - Hidden dimension: 256
 - Layers: 1
 - Dropout: 0.3
 
-### Medium Model
+### Overfit Model
 - Embedding dimension: 256
 - Hidden dimension: 512
 - Layers: 2
 - Dropout: 0.4
 
-### Large Model
+### Best Fit Model
 - Embedding dimension: 512
 - Hidden dimension: 1024
 - Layers: 3
-- Dropout: 0.5
+- Dropout: 0.6
 
 ## 🎯 Training Configuration
 
@@ -226,26 +226,26 @@ print(f"Test Perplexity: {metrics['perplexity']:.2f}")
 ## 📝  Results
 
 - **Training Time**: ~15-30 minutes for all three models (CPU), ~50 minutes with GPU
-- **Best Model**: Large model with 1.79 test perplexity
+- **Best Model**: Best Fit model with 1.79 test perplexity
 - **Test Perplexity Results**:
-  - Small: 4.58 (Underfitting)
-  - Medium: 2.04 (Good fit)
-  - Large: 1.79 (Best fit)
+  - Underfit: 4.58 (Underfitting)
+  - Overfit: 2.04 (Good fit)
+  - Best Fit: 1.79 (Best fit)
 - **Generated Text**: Should maintain Jane Austen's writing style
 
 ### Training Curves
 
-**Small Model - Underfitting:**
+**Underfit Model - Underfitting:**
 
-![Small Model Training](results/small_training_curves.png)
+![Underfit Model Training](results/small_training_curves.png)
 
-**Medium Model - Good Fit:**
+**Overfit Model - Good Fit:**
 
-![Medium Model Training](results/medium_training_curves.png)
+![Overfit Model Training](results/medium_training_curves.png)
 
-**Large Model - Best Fit:**
+**Best Fit Model - Best Fit:**
 
-![Large Model Training](results/large_training_curves.png)
+![Best Fit Model Training](results/large_training_curves.png)
 
 ### Model Comparison
 
